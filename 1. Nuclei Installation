@@ -1,0 +1,16 @@
+# nuclei kurmak icin;
+sudo apt update && sudo apt upgrade
+lsb_release -a
+> Ubuntu 20.04.4 LTS
+wget https://go.dev/dl/go1.18.linux-amd64.tar.gz
+ls /usr/local/go # distro's old go version, if exists; then $ sudo rm -rf /usr/local/go
+sudo tar -C /usr/local -xzf go1.18.linux-amd64.tar.gz
+# add the following to `$HOME/.bashrc`
+
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$GOROOT/bin:$HOME/.local/bin:$PATH
+
+# get a new shell/logout + login
+
+go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
