@@ -7,24 +7,23 @@ class OSCI_CVE_2019_15107_Attacker1(AttackerBase):
     
     def __init__(self):
         self.commandRunner = CommandRunner()
-        
 
-        
+
+
     def discovery(self) -> None:     
-        #self.commandRunner.runCommand("pwd")
-        #self.commandRunner.runCommand("cd ..")
-        #self.commandRunner.runCommand('ls')
-	self.commandRunner.runCommand('curl http://http://144.122.71.18:30002')
-	#(https://ivrsuresh.wordpress.com/2019/10/17/web-application-penetration-testing-with-curl/)
+        self.commandRunner.runCommand("curl http://144.122.71.18")
+        self.commandRunner.runCommand("cd ..")
+        self.commandRunner.runCommand('ls')
 
     def main(self):
         print("Main method started")
         #self.commandRunner.runCommand('echo "nuclei script started" ')     
-        self.commandRunner.runCommand('nuclei -u https://localhost:10000 -t ~/Desktop/TEST_ATTACTKS/ATTACK_YAMLS/CWE-78_OS-Command-Injection/CVE-2019-15107.yaml -debug ')
+        self.commandRunner.runCommand('nuclei -u https://144.122.71.18:30003 -t /home/vagrant/C>
 
 
     # Reverse shell will be handle later...
     def reverseShell(self):
+
 
         # init newTerminalThread
         # newTerminalThread -> Open terminal and run specific code ( it will wait) 
