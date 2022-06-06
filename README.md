@@ -20,3 +20,14 @@
 
             5.1. curl http://machine-ip -v (https://ivrsuresh.wordpress.com/2019/10/17/web-application-penetration-testing-with-curl/)
 
+
+
+Performance Testing of the Data Set
+
+ - Follow these: (https://www.linkedin.com/pulse/build-machine-learning-model-network-flow-tao-liu)
+    - Data mining - to find out raw data those can help prediction, need domain experts
+    - Features extraction - to pick up important features that relates to result accuracy
+    - Clean data - to make raw data organized, structured for easy loading
+    - Train data - to train data and validate data for best algorithm selection
+    - Predict / Hypothesis - to predict or classify based on live data
+
