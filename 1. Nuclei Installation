@@ -14,3 +14,43 @@ export PATH=$GOPATH/bin:$GOROOT/bin:$HOME/.local/bin:$PATH
 # get a new shell/logout + login
 
 go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
+
+
+
+
+ sudo apt update && sudo apt upgrade
+
+ lsb_release -a
+ 
+ wget https://go.dev/dl/go1.18.linux-amd64.tar.gz
+
+ls /usr/local/go
+
+ sudo rm -rf /usr/local/go
+ 
+ sudo tar -C /usr/local -xzf go1.18.linux-amd64.tar.gz
+ 
+  ls -la ~/ | more
+  
+  nano .bashrc
+  
+  # add the following to `$HOME/.bashrc`
+
+  export GOROOT=/usr/local/go
+  export GOPATH=$HOME/go
+  export PATH=$GOPATH/bin:$GOROOT/bin:$HOME/.local/bin:$PATH
+
+  
+  # get a new shell/logout + login
+  exit 
+  vagrant up
+  vagrant ssh
+  
+  
+  go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
+
+  
+
+
+ 
+
